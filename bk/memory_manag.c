@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * free_stack - Free a stack
- * @hd: Head of the stack
+ * free_stack - Free stack
+ * @hd: the header
  *
- * Return: None
+ * Return: Nn
  */
 void free_stack(stack_t *hd)
 {
@@ -19,10 +19,10 @@ void free_stack(stack_t *hd)
 }
 
 /**
- * empty_lines - Free memory allocated for parsed lines
- * @parsed_lines: Pointer to an array of line_t structures
+ * empty_lines - Free memory
+ * @parsed_lines: Pointer to an array
  *
- * Return: None
+ * Return: Nn
  */
 void empty_lines(line_t *parsed_lines)
 {
