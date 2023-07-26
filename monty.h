@@ -1,31 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
-#include <stdio.h>
+
 #include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <stdbool.h>
 #include <ctype.h>
-#include <fcntl.h>
-
-/**monty errors defined*/
-#define MONTY_ERROR_NONE 0
-#define MONTY_ERROR_INVALID_OPCODE 1
-#define MONTY_ERROR_PUSH_MISSING_ARG 2
-#define MONTY_ERROR_PUSH_INVALID_ARG 3
-#define MONTY_ERROR_PINT_EMPTY 4
-#define MONTY_ERROR_POP_EMPTY 5
-
-
-typedef struct monty_s{
-  char  *save_ptr;
-  int line;
-  char *token;
-  int mode;
-  int error;
-}monty_t;
-
-extern char* operand;
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <string.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -44,46 +26,42 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
+ * struct opcode_s - opcode and its function
+ * @opc: the opcode
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
-typedef struct instruction_s
+typedef struct opcode_s
 {
-	char *opcode;
+	char *opc;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/**
- * struct line_s - line content and its number
- * @content: line content
- * @number: line number 
- *
- * Description: stores line of the monty source code
- */
-typedef struct line_s
-{
-	char *content;
-	int number;
-} line_t;
 
-line_t *textfile_to_array(const char *filename);
-void op_push(stack_t **stack, unsigned int line_number);
-void op_pall(stack_t **stack, unsigned int line_number);
-void op_pint(stack_t **stack, unsigned int line_number);
-void op_pop(stack_t **stack, unsigned int line_number);
-void op_swap(stack_t **stack, unsigned int line_number);
+extern FILE *file;
+FILE *file;
 
-char **split_line(char *line);
-void (*get_op_func(char *s))(stack_t**, unsigned int);
+void _div(stack_t **stack, unsigned int ln_n);
+void pint(stack_t **stack, unsigned int ln_n);
+void pop(stack_t **stack, unsigned int ln_n);
+void pchar(stack_t **stack, unsigned int ln_n);
+void free_stack(stack_t *stack);
+int _isdigit(char *s);
+void mul(stack_t **stack, unsigned int ln_n);
+void mod(stack_t **stack, unsigned int ln_n);
+void rotl(stack_t **stack, unsigned int ln_n);
+void (*operator_function)(stack_t **, unsigned int);
+void swap(stack_t **stack, unsigned int ln_n);
+void add(stack_t **stack, unsigned int ln_n);
+void nop(stack_t **stack, unsigned int ln_n);
+void rotr(stack_t **stack, unsigned int ln_n);
+void pstr(stack_t **stack, unsigned int ln_n);
+void sub(stack_t **stack, unsigned int ln_n);
+void (*go(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
+void push(stack_t **stack, unsigned int ln_n, char *tmp);
+void pall(stack_t **stack, unsigned int ln_n);
 
-
-void free_lines(line_t *head);
-void free_stack(stack_t *head);
-int _atoi(char *s, int* n);
-
-#endif
+#endif /* MONTY_H */
 
