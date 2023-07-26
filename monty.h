@@ -10,13 +10,12 @@
 #include <string.h>
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
+ * struct stack_s - linked list rep of a stack
  * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * @prev: preV element of the stack
+ * @next: next element of the stack
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: doubly linked list 
  */
 typedef struct stack_s
 {
