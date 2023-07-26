@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * nop - Does nothing
- * @stack: Double pointer to the top of the stack (unused)
- * @ln_n: Line number where the operation occurs (unused)
+ * nop - nop
+ * @stack: stack
+ * @ln_n: Line nub
  *
- * Return: void
+ * Return: nothing
  */
 void nop(stack_t **stack, unsigned int ln_n)
 {
@@ -15,11 +15,11 @@ void nop(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * pop - Removes the top element of the stack
- * @stack: Double pointer to the top of the stack
- * @ln_n: Line number where the operation occurs
+ * pop - pop remover
+ * @stack: stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void pop(stack_t **stack, unsigned int ln_n)
 {
@@ -40,12 +40,12 @@ void pop(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * push - Pushes an element to the top of the stack
- * @stack: Double pointer to the top of the stack
- * @ln_n: Line number where the operation occurs (unused)
- * @tmp: String representing the element to be pushed
+ * push - Pushe ele
+ * @stack: stack
+ * @ln_n: Line num
+ * @tmp: String tmp
  *
- * Return: void
+ * Return: nothing
  */
 void push(stack_t **stack, unsigned int ln_n, char *tmp)
 {
@@ -86,10 +86,10 @@ void push(stack_t **stack, unsigned int ln_n, char *tmp)
 }
 
 /**
- * free_stack - Frees a stack
- * @stack: Pointer to the top of the stacki
+ * free_stack - stk free
+ * @stack: stack
  *
- * Return: void
+ * Return: nothing
  */
 void free_stack(stack_t *stack)
 {
@@ -101,11 +101,11 @@ void free_stack(stack_t *stack)
 }
 
 /**
- * swap - Swaps the top two elements of the stack
- * @stack: Double pointer to the top of the stack
- * @ln_n: Line number where the operation occurs
+ * swap - Swaps stack
+ * @stack: dbl stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void swap(stack_t **stack, unsigned int ln_n)
 {
