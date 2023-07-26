@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * go - Selects the appropriate function based on the given opcode
- * @op_f: Pointer to the opcode string
- * @l: Line number associated with the operation
- * @stak: Pointer to the top of the stack
+ * go - appropriate func based on the given opcode
+ * @op_f: OpcodeU str
+ * @l: Line number
+ * @stak: top stack
  *
- * Return: Pointer to the selected function
+ * Return: selected function
  */
 void (*go(char *op_f, unsigned int l, stack_t **stak))(stack_t**, unsigned int)
 {
