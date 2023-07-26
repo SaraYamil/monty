@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * _isdigit - Checks if a string represents a valid positive integer
- * @s: Pointer to the string to be checked
+ * _isdigit - is string represents a valid + int
+ * @s: string to be checked
  *
- * Return: 0 if the string represents a valid positive integer, 1 otherwise
+ * Return: 0 or 1
  */
 int _isdigit(char *s)
 {
@@ -24,11 +24,11 @@ int _isdigit(char *s)
 }
 
 /**
- * rotr - Rotates the stack to the right, moving the top element to the bottom
- * @stack: Double pointer to the top of the stack
- * @ln_n: Line number associated with the rotr operation (unused)
+ * rotr - Rotates the stack
+ * @stack: stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void rotr(stack_t **stack, unsigned int ln_n)
 {
@@ -51,11 +51,11 @@ void rotr(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * rotl - Rotates the stack to the left, moving the bottom element to the top
- * @stack: Double pointer to the top of the stack
- * @ln_n: Line number associated with the rotl operation (unused)
+ * rotl - Rotates the stack left
+ * @stack: dbl stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void rotl(stack_t **stack, unsigned int ln_n)
 {
