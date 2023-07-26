@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * main - Entry point of the Monty interpreter program
- * @argc: Number of command-line arguments
- * @argv: Array of command-line argument strings
+ * main - point program
+ * @argc: NUM of cMd-line argS
+ * @argv: Array of cmd-line arg stRs
  *
- * Return: Always returns 0 on successful execution
+ * Return: return 0
  */
 int main(int argc, char *argv[])
 {
