@@ -20,12 +20,12 @@
 
 
 /**
- * struct monty_s - Monty interpreter structure
- * @save_ptr: Pointer to the saved position in a string during parsing
- * @line: Line number in the Monty source code
- * @token: Current token being processed
- * @mode: Mode of operation (e.g., interpreter or script execution)
- * @error: Error code indicating any encountered error during execution
+ * struct monty_s - monty stru
+ * @save_ptr: Pointer saved position
+ * @line: Line num
+ * @token: Current toke
+ * @mode: Mode of operation
+ * @error: Error code
  */
 typedef struct monty_s
 {
@@ -39,11 +39,11 @@ typedef struct monty_s
 extern char *oprnd;
 
 /**
- * struct command_s - line content and its number
- * @line: line content
- * @num: line number
+ * struct command_s - line content
+ * @line: line cnt
+ * @num: line num
  *
- * Description: stores line of the monty source code
+ * Description: stores line
  */
 typedef struct command_s
 {
@@ -52,13 +52,12 @@ typedef struct command_s
 } line_t;
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * struct stack_s - doubly linked
+ * @n: int
+ * @prev: prev element of the stack
+ * @next: next element of the stack
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: doubly linked list
  */
 typedef struct stack_s
 {
@@ -68,12 +67,11 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct opcode_s - opcode and its function
- * @opc: the opcode
- * @f: function to handle the opcode
+ * struct opcode_s - opcode and its funooction
+ * @opc: opcode
+ * @f: func to handle
  *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: opcode and its func
  */
 typedef struct opcode_s
 {
