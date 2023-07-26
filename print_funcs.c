@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * pall - Prints all elements of a stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * pall - Pr all elms of a stack
+ * @stack: the stack
+ * @ln_n: Line num with the oper
  *
- * Return: voidd
+ * Return: nothing
  */
 void pall(stack_t **stack, unsigned int ln_n)
 {
@@ -21,11 +21,11 @@ void pall(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * pint - Prints the value at the top of the stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * pint - Prints value
+ * @stack: top of the stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void pint(stack_t **stack, unsigned int ln_n)
 {
@@ -40,11 +40,11 @@ void pint(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * pstr - Prints the string starting from the top of the stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * pstr - Pr string
+ * @stack: top of the stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void pstr(stack_t **stack, unsigned int ln_n)
 {
@@ -74,11 +74,11 @@ void pstr(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * pchar - Prints the character at the top of the stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * pchar - Prints the char
+ * @stack: top of the stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void pchar(stack_t **stack, unsigned int ln_n)
 {
