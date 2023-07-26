@@ -4,11 +4,11 @@
 char *oprnd;
 
 /**
- * main - Entry point of the Monty interpreter program
- * @argc: Number of command-line arguments
- * @argv: Array of command-line argument strings
+ * main - Entry point
+ * @argc: Num of cmd-line args
+ * @argv: Array of cmd-line arg strs
  *
- * Return: Always returns 0 on successful execution
+ * Return: 0
  */
 int main(int argc, char const *argv[])
 {
