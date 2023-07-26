@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * oper_push - Push an integer onto a stack
- * @stack: Pointer to the stack
- * @ln_n: Line number
+ * oper_push - Push an integer
+ * @stack: stack pointer
+ * @ln_n: Line num
  *
- * Return: None
+ * Return: Nn
  */
 void oper_push(stack_t **stack, unsigned int ln_n)
 {
@@ -44,11 +44,11 @@ void oper_push(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * oper_pall - Print all elements in the stack
- * @stack: Pointer to the stack
- * @ln_n: Line number
+ * oper_pall - Prt all elemens
+ * @stack: stack
+ * @ln_n: Line num
  *
- * Return: None
+ * Return: Nn
  */
 void oper_pall(stack_t **stack, unsigned int ln_n)
 {
@@ -63,11 +63,11 @@ void oper_pall(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * oper_pint - Print the top element of the stack
- * @stack: Pointer to the stack
- * @ln_n: Line number
+ * oper_pint - Prt the top element of the stack
+ * @stack: stack into pointer
+ * @ln_n: Line num
  *
- * Return: None
+ * Return: Nn
  */
 void oper_pint(stack_t **stack, unsigned int ln_n)
 {
