@@ -3,11 +3,10 @@
 #define DELIM " \t\r\n\a"
 
 /**
- * txt_toarr - Read lines from a file and store them in an array of
- *             line_t structs
- * @nameoffile: Name of the file to read
+ * txt_toarr - Read lines
+ * @nameoffile: Nm of the file to read
  *
- * Return: Pointer to the array of line_t structs on success, NULL on failure
+ * Return: NULL or pointetr
  */
 line_t *txt_toarr(const char *nameoffile)
 {
@@ -50,10 +49,10 @@ line_t *txt_toarr(const char *nameoffile)
 }
 
 /**
- * splt_ln - Split a parsed line into tokens
- * @parsed_line: The parsed line to be split
+ * splt_ln - Split a parsed
+ * @parsed_line: The parsed line
  *
- * Return: A double pointer to char representing the array of tokens
+ * Return: A double pointer
  */
 char **splt_ln(char *parsed_line)
 {
@@ -78,11 +77,11 @@ char **splt_ln(char *parsed_line)
 }
 
 /**
- * _atoi - Convert a string to an integer
- * @str: The string to be converted
- * @num: Pointer to store the converted integer
+ * _atoi - switsha string to an integer
+ * @str: strto be converted
+ * @num: Pointer to store
  *
- * Return: 0 on successful conversion, -1 otherwise
+ * Return: 0 or -1
  */
 int _atoi(char *str, int *num)
 {
@@ -113,10 +112,10 @@ int _atoi(char *str, int *num)
 }
 
 /**
- * op_function - Get the function corresponding to an opcode
- * @str: Opcode string
+ * op_function - function corresponding to an opcode
+ * @str: Opcode str
  *
- * Return: Function pointer corresponding to the opcode, or NULL if not found
+ * Return: Function pointer or NULL
  */
 void (*op_function(char *str))(stack_t**, unsigned int)
 {
@@ -136,10 +135,10 @@ void (*op_function(char *str))(stack_t**, unsigned int)
 }
 
 /**
- * mt_err - Print Monty interpreter error message
- * @mt: Pointer to the Monty interpreter structure
+ * mt_err - Print Monty
+ * @mt: Pointer to the Monty
  *
- * Return: None
+ * Return: Nn
  */
 void mt_err(monty_t *mt)
 {
