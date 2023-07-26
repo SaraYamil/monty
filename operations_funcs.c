@@ -2,11 +2,11 @@
 
 
 /**
- * mul - Multiplies the second element of the stack with the top element
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * mul - MulT the second element
+ * @stack: top of the stack
+ * @ln_n: Line number
  *
- * Return: void
+ * Return: NOTHING
  */
 void mul(stack_t **stack, unsigned int ln_n)
 {
@@ -30,12 +30,11 @@ void mul(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * mod - Computes the modulus of the second element by the top elementi
- *of the stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * mod - Computes THR second element
+ * @stack: top of the stack
+ * @ln_n: Line num associated
  *
- * Return: void
+ * Return: nothing
  */
 void mod(stack_t **stack, unsigned int ln_n)
 {
@@ -67,11 +66,11 @@ void mod(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * add - Adds the top two elements of the stack
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * add - top two elements of the stack to add
+ * @stack: the top of the stack
+ * @ln_n: Line num associated
  *
- * Return: void
+ * Return: nothing
  */
 void add(stack_t **stack, unsigned int ln_n)
 {
@@ -96,11 +95,11 @@ void add(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * _div - Divides the second element of the stack by the top element
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * _div - Divides the sec element
+ * @stack: top of the stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void _div(stack_t **stack, unsigned int ln_n)
 {
@@ -132,11 +131,11 @@ void _div(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * sub - Subtracts the top element of the stack from the second element
- * @stack: Pointer to the top of the stack
- * @ln_n: Line number associated with the operation
+ * sub - Subtracts the top element
+ * @stack: top of the stack
+ * @ln_n: Line num
  *
- * Return: void
+ * Return: nothing
  */
 void sub(stack_t **stack, unsigned int ln_n)
 {
