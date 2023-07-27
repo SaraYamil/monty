@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * main - point program
+ * main - poihhnt program
  * @argc: NUM of cMd-line argS
  * @argv: Array of cmd-line arg stRs
  *
